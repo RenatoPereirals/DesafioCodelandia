@@ -1,0 +1,232 @@
+/*======= RESET =======*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
+}
+img {
+  width: 100%;
+}
+a {
+  color: rgba(43, 108, 176, 1);
+  opacity: 0.8;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 1;
+}
+
+/* MURAL */
+.mural {
+  display: none;
+}
+
+.rigth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FORMULÁRIO */
+
+.container-form {
+  padding-top: 15%;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.container-form p {
+  font-size: 16px;
+  font-size: 'Merriweather';
+  line-height: 20px;
+  color: rgba(26, 32, 44, 1);
+  margin-bottom: 10px;
+}
+.container-form h1 {
+  font-size: 26px;
+  font-size: 'Merriweather';
+  line-height: 33px;
+  color: rgba(26, 32, 44, 1);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.form-group {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container {
+  width: 100%;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  font-size: 16px;
+  font-family: 'Lato';
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.input-group input {
+  width: 100%;
+  height: 50px;
+  color: rgba(232, 232, 232, 1);
+  border: 1px solid rgba(232, 232, 232, 1);
+  border-radius: 5px;
+}
+.input-checkbox {
+  margin-top: 30px;
+  
+}
+.input-checkbox a {
+  float: right; 
+  font-size: 14px;
+  font-family: 'Lato';
+}
+.input-checkbox label {
+  font-size: 14px;
+  font-family: 'Lato';
+}
+/* Estilizando o input do checkbox */
+.input-checkbox input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(232, 232, 232, 1);
+  background-color: rgba(247, 250, 252, 1);
+  border-radius: 50%; /* Deixa o checkbox redondo */
+  cursor: pointer;
+}
+
+/* Estilizando o ícone do checkbox */
+.input-checkbox input[type='checkbox']::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%; /* Deixa o ícone do checkbox redondo */
+}
+
+/* Estilizando o ícone do checkbox quando marcado */
+.input-checkbox input[type='checkbox']:checked::before {
+  background-color: #007bff;
+}
+
+/* BUTTONS */
+.btn {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.btn-entrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(4, 195, 92, 1);
+  margin-bottom: 15px;
+}
+.btn-entrar {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: 700;
+}
+.btn-google {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(26, 32, 44, 1);
+}
+.btn-google {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: 700;
+}
+.btn-google img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* CADASTRO */
+footer {
+  margin-top: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/*======= MOBILE FIRST =======*/
+/* Estilos para dispositivos móveis */
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (max-width: 480px) {
+}
+
+/* SMALL DEVICES - TABLETS */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS */
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+ 
+}
+
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and (min-width: 1281px) {
+  .left {
+    width: 50%;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(247, 250, 252, 1);
+  }
+  .mural {
+    width: 400px;
+    height: 330px;
+    display: block;
+  }
+ .rigth {
+  width: 50%;
+  float: right;
+ }
+}
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and (min-width: 1666px) {
+  
+}

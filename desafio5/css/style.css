@@ -1,0 +1,142 @@
+/*======= RESET =======*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  box-shadow: 26px 24px   90px rgba(31, 26, 51, 0.13);
+  background-image: linear-gradient(
+    -45deg,
+    rgba(26, 72, 85, 1),
+    rgba(98, 142, 117, 1)
+  );
+}
+
+/* HEADER */
+.nav-container {
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-left: 25px;
+}
+.logo img {
+  width: 100px;
+  height: 48px;
+}
+.redes-sociais i {
+  margin-right: 25px;
+  width: 20px;
+  height: 20px;
+  color: rgba(249, 249, 249, 1);
+}
+/* BANNER */
+.banner img {
+  width: 300px;
+  height: 221px;
+  margin-left: 82px;
+}
+/* FILME */
+.nome {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+  margin-left: 25px;
+  color: rgba(249, 249, 249, 1);
+}
+.author p {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  margin-bottom: 10px;
+}
+.title h1 {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 61px;
+  margin-bottom: 15px;
+}
+.descricao {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 70px;
+}
+.button button {
+  width: 225px;
+  height: 45px;
+  background-color: rgba(101, 142, 118, 1);
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transform: skewX(-20deg); /* Inclinar o trapézio */
+  margin-bottom: 35px;
+}
+.button button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  color: rgba(249, 249, 249, 1);
+}
+.button button i {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+/*======= MOBILE FIRST =======*/
+/* Estilos para dispositivos móveis */
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (max-width: 480px) {
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS */
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+}
+
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and (min-width: 1281px) {
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav-container {
+    width: 100%;
+  }
+  .logo {
+    margin-left: 165px;
+  }
+  .redes-sociais {
+    margin-right: 140px;
+  }
+  .banner {
+    margin-top: 210px;
+    order: 3;
+    width: 40%;
+  }
+  .banner img {
+    width: 500px;
+    height: 370px;
+    margin-right: 130px;
+  }
+  .nome{
+    margin-top: 165px;
+    margin-left: 165px;
+    width: 40%;
+  }
+}
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and (min-width: 1666px) {
+}
