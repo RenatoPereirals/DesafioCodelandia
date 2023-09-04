@@ -1,0 +1,225 @@
+/*======= RESET =======*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+}
+a {
+  text-decoration: none;
+  opacity: 0.7;
+}
+a:hover {
+  opacity: 1;
+}
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+header {
+  background-color: #574ae8;
+  background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.top-nav {
+  align-items: start;
+  align-self: top;
+  font-size: 24px;
+  min-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.brand {
+  width: 133px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.brand a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.brand-blog a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.search-form {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  min-width: 900px;
+  margin-top: 108px;
+  border-radius: 5px;
+  padding: 16px 16px;
+}
+
+.search-box {
+  background-color: transparent;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  font-size: 30px;
+  margin-left: 8px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+}
+
+.fa-search {
+  color: rgba(255, 255, 255, 1);
+  font-size: 30px;
+}
+
+/* ARTIGOS */
+section {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  max-width: 900px;
+}
+
+.article {
+  background-color: #ffffff;
+  box-shadow: rgba(19, 19, 31, 0.05);
+  align-self: top;
+  font-size: 24px;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.date {
+  font-size: 16px;
+}
+.image {
+  width: 25px;
+  height: 25px;
+}
+.title h3 {
+  width: 100%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.descricao {
+  width: 100%;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#icon {
+  fill: #574ae801;
+  stroke: #574ae8;
+  stroke-width: 7;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+#icon.filled,
+#icon:hover {
+  fill: #574ae8;
+}
+
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+  .top-nav {
+    font-size: 20px;
+    min-width: 374px;
+  }
+  .search-form {
+    min-width: 374px;
+    margin-top: 108px;
+  }
+  input {
+    font-size: 25px;
+  }
+  input::placeholder {
+    font-size: 18px;
+  }
+  .fa-search {
+    font-size: 25px;
+  }
+  section {
+    width: 374px;
+  }
+}
+ 
+
+/* SMALL DEVICES - TABLETS */
+@media screen and (min-width: 768px) {
+  .top-nav {
+    font-size: 20px;
+    min-width: 600px;
+  }
+  .search-form {
+    min-width: 600px;
+    margin-top: 108px;
+  }
+  input {
+    font-size: 25px;
+  }
+  input::placeholder {
+    font-size: 18px;
+  }
+  .fa-search {
+    font-size: 25px;
+  }
+  section {
+    width: 600px;
+  }
+  
+}
+
+/* MEDIUM DEVICES - TABLETS & DESCKTOPS */
+@media screen and (min-width: 960px) {
+  .top-nav {
+    font-size: 20px;
+    min-width: 600px;
+  }
+  .search-form {
+    min-width: 600px;
+    margin-top: 108px;
+  }
+  input {
+    font-size: 25px;
+  }
+  input::placeholder {
+    font-size: 18px;
+  }
+  .fa-search {
+    font-size: 25px;
+  }
+  section {
+    width: 600px;
+  }
+}
