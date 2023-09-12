@@ -2,6 +2,10 @@
 
 Neste repositório, você encontrará uma série de desafios oferecidos pela Codelândia. Cada desafio é uma oportunidade para aprimorar suas habilidades em desenvolvimento web.
 
+ **Tecnologias Utilizadas:**
+- HTML
+- CSS
+
 ## Desafio 1: Construindo um Blog
 
 ![Captura de Tela](desafio1/screenshot.png)
